@@ -1,0 +1,218 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-09-08 13:47:40.431503",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pv_date",
+  "payment_method",
+  "column_break_4",
+  "pv_ref",
+  "pv_amount",
+  "pv_payment_account",
+  "section_break_8",
+  "pv_paid_to",
+  "pv_purpose",
+  "initiator_details_section",
+  "pv_prepared_by",
+  "column_break_13",
+  "pv_signature1",
+  "approval_details_section",
+  "pv_approved_by",
+  "column_break_17",
+  "pv_signature2",
+  "receiver_section",
+  "pv_received_by",
+  "column_break_21",
+  "pv_signature3",
+  "section_break_23",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "pv_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date",
+   "options": "Today()"
+  },
+  {
+   "fieldname": "pv_amount",
+   "fieldtype": "Small Text",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Link",
+   "label": "Payment Method",
+   "options": "Mode of Payment"
+  },
+  {
+   "fieldname": "pv_ref",
+   "fieldtype": "Data",
+   "label": "Ref/Chq. No."
+  },
+  {
+   "fieldname": "pv_paid_to",
+   "fieldtype": "Link",
+   "label": "Paid To",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "pv_payment_account",
+   "fieldtype": "Link",
+   "label": "Payment Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "pv_purpose",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "pv_prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "pv_approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "pv_received_by",
+   "fieldtype": "Link",
+   "label": "Received By",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "pv_signature1",
+   "fieldtype": "Signature",
+   "label": "Signature1"
+  },
+  {
+   "fieldname": "pv_signature2",
+   "fieldtype": "Signature",
+   "label": "Signature2"
+  },
+  {
+   "fieldname": "pv_signature3",
+   "fieldtype": "Signature",
+   "label": "Signature3"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Payment Voucher",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "initiator_details_section",
+   "fieldtype": "Section Break",
+   "label": "Initiator Details"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approval_details_section",
+   "fieldtype": "Section Break",
+   "label": "Approval Details"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receiver_section",
+   "fieldtype": "Section Break",
+   "label": "Receiver"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PV Number",
+   "options": "PV-",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-09-08 15:47:29.468348",
+ "modified_by": "Administrator",
+ "module": "SILAP Vouchers",
+ "name": "Payment Voucher",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

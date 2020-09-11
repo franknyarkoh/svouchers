@@ -1,0 +1,245 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-09-08 14:59:43.960421",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "rv_date",
+  "rv_amount",
+  "column_break_4",
+  "rv_purpose",
+  "rv_requested_by",
+  "section_break_24",
+  "request_line",
+  "section_break_25",
+  "rtotal1",
+  "column_break_22",
+  "rtotal",
+  "initiator_details_section",
+  "rv_prepared_by",
+  "column_break_13",
+  "rv_signature1",
+  "approval_details_section",
+  "rv_approved_by",
+  "column_break_17",
+  "rv_signature2",
+  "receiver_section",
+  "rv_reviewed_by",
+  "column_break_21",
+  "rv_signature3",
+  "section_break_23",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "RV Number",
+   "options": "RV-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initiator_details_section",
+   "fieldtype": "Section Break",
+   "label": "Initiator Details"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break",
+   "options": "3"
+  },
+  {
+   "fieldname": "approval_details_section",
+   "fieldtype": "Section Break",
+   "label": "Approval Details"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receiver_section",
+   "fieldtype": "Section Break",
+   "label": "Reviewer"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Request Voucher",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Request Voucher",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rv_date",
+   "fieldtype": "Datetime",
+   "label": "Date",
+   "options": "Today()"
+  },
+  {
+   "fieldname": "rv_amount",
+   "fieldtype": "Small Text",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "rv_requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "rv_purpose",
+   "fieldtype": "Small Text",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "rv_prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "rv_signature1",
+   "fieldtype": "Signature",
+   "label": "Signature1"
+  },
+  {
+   "fieldname": "rv_approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "rv_signature2",
+   "fieldtype": "Signature",
+   "label": "Signature2"
+  },
+  {
+   "fieldname": "rv_signature3",
+   "fieldtype": "Signature",
+   "label": "Signature3"
+  },
+  {
+   "fieldname": "request_line",
+   "fieldtype": "Table",
+   "label": "Request Line",
+   "options": "Request Line"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rtotal",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rtotal1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "rTotal1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rv_reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed By",
+   "options": "Contact"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-09-11 12:48:01.721172",
+ "modified_by": "Administrator",
+ "module": "SILAP Vouchers",
+ "name": "Request Voucher",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

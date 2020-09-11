@@ -1,0 +1,49 @@
+{
+ "creation": "2020-09-08 14:58:36.597888",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rdescription",
+  "rqty",
+  "rprice",
+  "ramount"
+ ],
+ "fields": [
+  {
+   "fieldname": "rdescription",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "rqty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "rprice",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "ramount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-08 15:12:43.576420",
+ "modified_by": "Administrator",
+ "module": "SILAP Vouchers",
+ "name": "Request Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
