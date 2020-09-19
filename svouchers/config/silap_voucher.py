@@ -5,16 +5,13 @@ def get_data():
 
     return [
         {
-            "label": _("Document"),
+            "label": _("SILAP Vouchers"),
             "icon": "octicon octicon-briefcase",
             "items": [
                 {
                     "type": "doctype",
-                    "name": "Payment Voucher",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Request Vocher",
+                    "name": "Request Voucher",
+                }
                 }
             ]
         }
