@@ -13,7 +13,6 @@ def get_data():
                     "name": "Request Voucher",
                     "label": _("Request Voucher"),
                 }
-                }
             ]
         }
     ]
